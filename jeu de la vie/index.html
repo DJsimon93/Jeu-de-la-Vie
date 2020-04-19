@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Jeu De La Vie 2</title>
+    
+
+
+     <!-- Latest compiled and minified CSS -->  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+
+</head>
+
+<body>
+
+    <div class="container" id="form">
+        <h3>Bienvenu au jeu de la vie</h3>
+        <h4>choissisez la largeur et hauteur de la grille</h4>
+        <br>
+        <form method="GET" action="">
+           <p>nombre de lignes<input id="valLignes"type="number" min="1" max="100" step="1" value="24" name="lignes"></p> 
+           <p>nombre de colonnes<input id="valColones"type="number" min="1" max="100" step="1" value="40" name="colonnes"></p> 
+            <button class="btn-secondary"id="bouton1" type = submit>creer la matrice</button>
+        </form>
+        
+       
+        <h6>appuyez sur "r" pour une config aleatoire...</h6>
+    </div>
+    
+    
+    <div id="grille" class="grille">
+        <button class="btn-secondary" id="start">START</button>
+    </div>
+    
+
+
+</body>
+
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="game.js"></script>
+<script type="text/javascript" src="fonctions.js"></script>
+
+</html>
